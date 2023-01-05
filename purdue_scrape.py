@@ -150,7 +150,7 @@ for start_month, end_month, index in zip(list(df['start_month']), list(df['end_m
         df.at[int(index), 'start_code'] = code_generator(start_month[0:3])
         df.at[int(index), 'end_code'] = code_generator(end_month[0:3])
         
-calendar = ical_generator.calendar()
+calendar = cal_generator.calendar()
 
 for index in list(df.index):
     if df.at[index, 'end_hour'] == '':
@@ -161,7 +161,7 @@ for index in list(df.index):
             year = df.at[index, 'start_year']
             description = df.at[index, 'description']
 
-            event = ical_generator.event()
+            event = cal_generator.event()
             event.single_day(date, month, year, description)
             built_event = event.build()
             calendar.add_event(built_event)
@@ -175,7 +175,7 @@ for index in list(df.index):
             end_year = df.at[index, 'end_year']
             description = df.at[index, 'description']
 
-            event = ical_generator.event()
+            event = cal_generator.event()
             event.multi_day(start_date, start_month, start_year, end_date, end_month, end_year, description)
             built_event = event.build()
             calendar.add_event(built_event)
@@ -191,7 +191,7 @@ for index in list(df.index):
         timezone = 'America/Indianapolis'
         description = df.at[index, 'description']
 
-        event = ical_generator.event()
+        event = cal_generator.event()
         event.time_event(date, month, year, start_hour, start_minute, end_hour, end_minute, timezone, description)
         built_event = event.build()
         calendar.add_event(built_event)
