@@ -6,7 +6,7 @@ iCalendar is a standard for the storage and sharing of calendar events. Taking t
 The purpose of this project is to create a program that can use the <a href="https://icalendar.readthedocs.io/en/latest/">Python iCalendar library</a> to take simple data fed into it and export an iCalendar file that is ready to be imported into a calendar client. 
 
 <h2>Purpose of Project</h2>
-I wanted to be able to take the academic calendar my university has published on their website and add the events into my calendar app(s) of choice, helping me to organize and identify my schedule, especially in regard to breaks and exams. Last year, I entered the events manually into an Excel sheet and got them into my calendar by running it through various different programs. I wanted to automate this, as manually entereing and running files through multiple programs is not simple, streamlined, or practical, especially for a large number of events. 
+I wanted to be able to take the academic calendar my university has published on their website and add the events into my calendar app(s) of choice, helping me to organize and identify my schedule, especially in regard to breaks and exams. Last year, I entered the events manually into an Excel sheet and got them into my calendar by running it through various different programs. I wanted to automate this, as manually entering and running files through multiple programs is not simple, streamlined, or practical, especially for a large number of events. 
 <br></br>
 I also wanted to do a few more projects that had an emphasis on object-oriented design, which I did not have in any of my existing published projects.
 
